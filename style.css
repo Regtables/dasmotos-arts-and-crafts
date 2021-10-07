@@ -4,7 +4,7 @@ body{
 
 .container{
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
 }
 
 header{
@@ -23,7 +23,7 @@ header h1{
   color: khaki;
   z-index: 2;
 }
-
+/* dark overlay */
 .overlay:before{
   content: '';
   position: absolute;
@@ -33,7 +33,7 @@ header h1{
   width: 100%;
   background: rgba(0,0,0,0.6);
 }
-
+/* so that header-text displays above overlay */
 .overlay *{
   position: relative;
 }
