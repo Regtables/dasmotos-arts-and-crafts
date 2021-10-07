@@ -1,0 +1,16 @@
+body{
+  margin: 0;
+}
+
+.container{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+header{
+  background-image: url('./images/header-background.webp');
+  background-size: cover;
+  height: 300px;
+  width: 100%;
+}
+
