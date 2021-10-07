@@ -8,9 +8,33 @@ body{
 }
 
 header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: url('./images/header-background.webp');
   background-size: cover;
   height: 300px;
   width: 100%;
+}
+
+header h1{
+  font-family: helvetica;
+  font-size: 7vw;
+  color: khaki;
+  z-index: 2;
+}
+
+.overlay:before{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  display:block;
+  height: 300px;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+}
+
+.overlay *{
+  position: relative;
 }
 
