@@ -48,7 +48,7 @@ header h1{
   display: grid;
   grid-template-rows: 1fr 2fr;
 }
-.brushes-header-wrapper{
+.brushes-wrapper .item-header-wrapper{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,13 +57,14 @@ header h1{
   height: 100px;
 }
 
-.brushes-header-text-wrapper{
+.item-header-text-wrapper{
   color: white;
   font-size: 4vw;
   font-family: Helvetica;
+  margin: 0px 10px;
 }
 
-.brushes-content-wrapper{
+.brushes-wrapper .item-content-wrapper{
 
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/brushes-background.jpg');
   background-size: cover;
@@ -81,6 +82,37 @@ p{
   font-family: Helvetica;
 }
 
-.brushes-content-text-wrapper{
-  margin-left: 10px;
+.brushes-wrapper .item-content-text-wrapper{
+  margin: 0px 10px;
+
 }
+
+.frames-wrapper .item-content-text-wrapper{
+  margin-right: 10px;
+}
+
+/* Frames Styles */
+
+.frames-wrapper{
+  display: grid;
+  grid-template-rows: 1fr 2fr;
+  text-align: right;
+}
+
+.frames-wrapper .item-header-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #741919;
+  width: 100%;
+  height: 100px;
+}
+
+
+.frames-wrapper .item-content-wrapper{
+
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/frames-background.jpeg');
+  background-size: cover;
+}
+
+
